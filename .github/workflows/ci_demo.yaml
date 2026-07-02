@@ -56,7 +56,7 @@ jobs:
             sudo apt-get install -y postgresql-client
         - name: 'Execute SQL'
           run: |
-            export ${{ secrets.SUPABASE_PASSWORD }}
+            export PGPASSWORD=${{ secrets.SUPABASE_PASSWORD }}
             psql -h "${{ secrets.SUPABASE_HOST }}" \
             -p 5432 \
             -d postgres \
