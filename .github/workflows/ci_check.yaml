@@ -13,4 +13,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Install SQLFluff
         run: pip install sqlfluff
-      - name: 
+      - name: 'Lint SQL Files'
+        run: sqlfluff lint ./scripts --dialect postgres
