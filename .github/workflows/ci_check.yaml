@@ -1,0 +1,16 @@
+name: 'Check Syntax'
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check_syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout Repository'
+        uses: actions/checkout@v4
+      - name: Install SQLFluff
+        run: pip install sqlfluff
+      - name: 
