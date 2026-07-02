@@ -18,7 +18,7 @@ jobs:
         run: |
           VERSION=$(cat version.txt)
           ARTIFACT="artifact_${VERSION}"
-          zip -r "scripts/$(ARTIFACT}.zip" scripts/
+          zip -r "scripts/${ARTIFACT}.zip" scripts/
           echo "artifact_name=$ARTIFACT" >> "$GITHUB_OUTPUT"
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v4
