@@ -1,1 +1,1 @@
-
+VIEW * TABLES
