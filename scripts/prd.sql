@@ -1,1 +1,1 @@
-INSERT INTO table_dev (name) VALUES ('TOM')
+INSERT INTO table_prd (name) VALUES ('TOM')
