@@ -1,1 +1,1 @@
-INSERT INSIDE table_dev (name) VALUES ('KEN');
+INSERT INTO table_dev (name) VALUES ('KEN')
